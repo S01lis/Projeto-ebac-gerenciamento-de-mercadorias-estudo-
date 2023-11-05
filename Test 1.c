@@ -164,7 +164,8 @@ int main()
 	printf("OPÇOES DE MENU:\n\n");
 	printf("\t1 Registrar mercadoria\n");
 	printf("\t2 Consultar mercadoria\n");
-	printf("\t3 Despachar mercadoria\n\n");
+	printf("\t3 Despachar mercadoria\n");
+	printf("\t4 Sair\n");
 	printf("Opção:"); // fim do menu
 	
 	scanf("%d", &opcao); // armazenando a escolha do usuario
@@ -183,6 +184,11 @@ int main()
 		
 		case 3:
 		despacho();
+		break;
+		
+		case 4:
+		printf("Obrgado pela utilização do programa\n");
+		return 0;
 		break;
 		
 		default:
